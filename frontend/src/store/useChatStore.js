@@ -29,12 +29,13 @@ export const useChatStore = create((set, get) => ({
     //   toast.error("Invalid user ID");
     //   return;
     // }
+      if (!userId) return;
       set({ isMessagesLoading: true });
       try{
         const res =  await axiosInstance.get(`/messages/${userId}`);
         set({ messages: res.data });
       }catch(error) {
-          toast.error(error.response.data.message);
+          toast.error(error.response?.data?.message || "Failed to fetch messages");
       }finally {
         set({ isMessagesLoading: false });
       }
@@ -42,6 +43,10 @@ export const useChatStore = create((set, get) => ({
 
   sendMessage: async (messageData) => {
      const { selectedUser, messages } = get();
+      if (!selectedUser?._id) {
+      toast.error("No user selected");
+      return;
+    }
      try {
       const res = await axiosInstance.post(`/messages/send/${selectedUser._id}`, messageData);
       set({ messages: [...messages, res.data] });
