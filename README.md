@@ -102,7 +102,11 @@ Realtime: Socket.IO
 |-------------|-------------|
 | ![](https://github.com/user-attachments/assets/e0e959c1-08d3-495a-9896-76b6b276e642) | ![](https://github.com/user-attachments/assets/d34631d0-3910-4d7d-a6a2-c6eaffcc0896) |
 
-<img width="1800" height="853" alt="image" src="https://github.com/user-attachments/assets/7b4a9a4c-0006-4d05-a4d2-15b6859b346c" />
+
+|  Theme view |
+|-------------|
+| ![Theme view](https://github.com/user-attachments/assets/7b4a9a4c-0006-4d05-a4d2-15b6859b346c) |
+
 <img width="927" height="366" alt="image" src="https://github.com/user-attachments/assets/d0b281d3-f3ce-470c-852d-f5913a44f34c" />
 
 
@@ -119,6 +123,7 @@ Commit your changes
 
 Push and submit a PR
 
+## Live Demo - https://fullstack-chat-app-mis6.onrender.com/
 
 
 
